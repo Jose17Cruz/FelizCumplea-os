@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Música</title>
+    <title>musica</title>
     <style>
         body {
             margin: 0;
-            overflow: hidden;
+           padding: 0;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 50vh;
             background-color: #111;
             font-family: Verdana, sans-serif;
         }
 
         canvas {
-          
-            width: 50%;
-            height: 50vh;
-           
+            position: absolute;
+            top: 0;
+            left: 0;
+          height:50vh;
+          width:20% ;
         }
 
         p {
+            transform: translate(-50%-50%);
+            margin: 0;
             position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
             font-size: 16px;
             color: #eee;
+            top: calc(100vh - 30px);
             text-shadow: 0 0 2px white;
-            z-index: 1;
         }
 
         p a {
@@ -37,7 +41,6 @@
 
         p a:first-of-type {
             font-size: 20px;
-            margin-right: 10px;
         }
 
         span {
@@ -48,8 +51,9 @@
 <body>
     <canvas id="c"></canvas>
     <p>
-        <a href="mensaje.html">Presione aquí</a>
+         <a href="mensaje.html">Precione aqui</a>
     </p>
+    <script>  <a href="mensaje.html">Precione aqui</a> </script>
     <script>
         var canvas = document.getElementById('c'),
             ctx = canvas.getContext('2d'),
