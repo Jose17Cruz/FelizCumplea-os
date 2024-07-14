@@ -7,9 +7,7 @@
     <style>
         body {
             margin: 0;
-           padding: 0;
-           
-          
+            overflow: hidden;
             background-color: #111;
             font-family: Verdana, sans-serif;
         }
@@ -18,8 +16,6 @@
             position: absolute;
             top: 0;
             left: 0;
-          height:60vh;
-          width:90% ;
         }
 
         p {
@@ -51,7 +47,7 @@
     <p>
          <a href="mensaje.html">Precione aqui</a>
     </p>
-    <script>  <a href="mensaje.html">Precione aqui</a> </script>
+
     <script>
         var canvas = document.getElementById('c'),
             ctx = canvas.getContext('2d'),
@@ -60,7 +56,7 @@
             hw = w / 2,
             hh = h / 2,
             opts = {
-                strings: ['Hola','buenas' ,'Tardes!', 'le deseo','que se','la pase','bien','con su', '[ familia ]'],
+                strings: ['Hola Buenas ', 'Tardes!', 'le deseo que ','se  pase bien ', '[Con su familia ]'],
                 charSize: 72,
                 charSpacing: 75,
                 lineHeight: 90,
