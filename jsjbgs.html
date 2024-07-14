@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>musica</title>
+    <title>Música</title>
     <style>
         body {
             margin: 0;
@@ -16,15 +16,20 @@
             position: absolute;
             top: 0;
             left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: block;
         }
 
         p {
-            margin: 0;
             position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
             font-size: 16px;
             color: #eee;
-            top: calc(100vh - 30px);
             text-shadow: 0 0 2px white;
+            z-index: 1;
         }
 
         p a {
@@ -34,6 +39,7 @@
 
         p a:first-of-type {
             font-size: 20px;
+            margin-right: 10px;
         }
 
         span {
@@ -44,9 +50,9 @@
 <body>
     <canvas id="c"></canvas>
     <p>
-         <a href="mensaje.html">Precione aqui</a>
+        <a href="mensaje.html">Presione aquí</a>
+        <a href="https://buymeacoffee.com/er.robin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 160px !important;" ></a>
     </p>
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="er.robin" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     <script>
         var canvas = document.getElementById('c'),
             ctx = canvas.getContext('2d'),
